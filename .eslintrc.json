@@ -1,0 +1,12 @@
+{
+    "env" : {
+        "jest": true,
+        "es6": true
+    },
+    "extends" : "airbnb-base",
+    "rules": {
+        "arrow-body-style": "off",
+        "prefer-template": "off",
+        "spaced-comment": "off"
+    }
+}
