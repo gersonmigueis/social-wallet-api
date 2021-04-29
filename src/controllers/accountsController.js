@@ -1,4 +1,4 @@
-const AccountService = require('../services/accountService');
+const AccountService = require('../services/accountsService');
 
 class AccountsController {
   static async listAccount(request, response) {

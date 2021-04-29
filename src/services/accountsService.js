@@ -1,4 +1,4 @@
-const AccountRepository = require('../repository/accountRepository');
+const AccountRepository = require('../repository/accountsRepository');
 
 class AccountService {
   static async list() {

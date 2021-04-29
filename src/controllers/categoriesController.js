@@ -1,4 +1,4 @@
-const CategoriesService = require('../services/categoryServices');
+const CategoriesService = require('../services/categoriesServices');
 
 class CategoriesController {
   static async listCategories(request, response) {
