@@ -11,16 +11,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Transaction.init({
     // eslint-disable-next-line
-    value: DataTypes.DECIMAL(15,4),
+    value: DataTypes.DOUBLE(10,2),
     type: DataTypes.INTEGER,
     observation: DataTypes.STRING,
     id_account: DataTypes.UUID,
     id_category: DataTypes.UUID,
   }, {
     sequelize,
-    paranoid: true,
-    modelName: 'Transaction',
-    tableName: 'Transactions',
+    modelName: 'Transactions',
   });
 
   Transaction.beforeCreate((transaction) => {
