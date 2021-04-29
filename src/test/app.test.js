@@ -1,6 +1,6 @@
 const request = require('supertest');
 
-const app = require('../src/app');
+const app = require('../app');
 
 test('Server respondendo na raiz', () => {
   return request(app).get('/')
