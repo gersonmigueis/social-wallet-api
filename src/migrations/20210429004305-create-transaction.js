@@ -10,7 +10,7 @@ module.exports = {
       value: {
         allowNull: false,
         // eslint-disable-next-line
-        type: Sequelize.DECIMAL(15,4),
+        type: Sequelize.DOUBLE(10,2),
       },
       type: {
         allowNull: false,
@@ -32,7 +32,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.UUID,
         references: {
-          model: 'CategoryTransactions',
+          model: 'Categories',
           key: 'id',
         },
       },
