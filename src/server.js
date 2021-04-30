@@ -2,4 +2,7 @@
 require('dotenv').config();
 const app = require('./app');
 
-app.listen(3001);
+const port = 3001;
+
+// eslint-disable-next-line
+app.listen(port, () => console.log(`Server up! - Port ${port}`));
